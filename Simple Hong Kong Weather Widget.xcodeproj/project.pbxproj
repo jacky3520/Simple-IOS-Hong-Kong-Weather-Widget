@@ -14,6 +14,15 @@
 		CDEBB21C284949A900743E37 /* Simple_Hong_Kong_Weather_WidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBB21B284949A900743E37 /* Simple_Hong_Kong_Weather_WidgetTests.swift */; };
 		CDEBB226284949A900743E37 /* Simple_Hong_Kong_Weather_WidgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBB225284949A900743E37 /* Simple_Hong_Kong_Weather_WidgetUITests.swift */; };
 		CDEBB228284949A900743E37 /* Simple_Hong_Kong_Weather_WidgetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBB227284949A900743E37 /* Simple_Hong_Kong_Weather_WidgetUITestsLaunchTests.swift */; };
+		CDEBB23B28494C9F00743E37 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEBB23A28494C9F00743E37 /* WidgetKit.framework */; };
+		CDEBB23D28494C9F00743E37 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEBB23C28494C9F00743E37 /* SwiftUI.framework */; };
+		CDEBB24028494C9F00743E37 /* HK_Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBB23F28494C9F00743E37 /* HK_Weather.swift */; };
+		CDEBB24228494CA100743E37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDEBB24128494CA100743E37 /* Assets.xcassets */; };
+		CDEBB24628494CA100743E37 /* HK WeatherExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CDEBB23828494C9F00743E37 /* HK WeatherExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CDEBB2552849579400743E37 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBB2542849579400743E37 /* Weather.swift */; };
+		CDEBB2572849588D00743E37 /* WeatherEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBB2562849588D00743E37 /* WeatherEntry.swift */; };
+		CDEBB2592849590400743E37 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBB2582849590400743E37 /* WeatherService.swift */; };
+		CDEBB25B28495B6400743E37 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBB25A28495B6400743E37 /* WeatherResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +40,28 @@
 			remoteGlobalIDString = CDEBB206284949A300743E37;
 			remoteInfo = "Simple Hong Kong Weather Widget";
 		};
+		CDEBB24428494CA100743E37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDEBB1FF284949A300743E37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDEBB23728494C9F00743E37;
+			remoteInfo = "HK WeatherExtension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CDEBB24A28494CA100743E37 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CDEBB24628494CA100743E37 /* HK WeatherExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CDEBB207284949A300743E37 /* Simple Hong Kong Weather Widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Hong Kong Weather Widget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +74,16 @@
 		CDEBB221284949A900743E37 /* Simple Hong Kong Weather WidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple Hong Kong Weather WidgetUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDEBB225284949A900743E37 /* Simple_Hong_Kong_Weather_WidgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_Hong_Kong_Weather_WidgetUITests.swift; sourceTree = "<group>"; };
 		CDEBB227284949A900743E37 /* Simple_Hong_Kong_Weather_WidgetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_Hong_Kong_Weather_WidgetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CDEBB23828494C9F00743E37 /* HK WeatherExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HK WeatherExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDEBB23A28494C9F00743E37 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		CDEBB23C28494C9F00743E37 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		CDEBB23F28494C9F00743E37 /* HK_Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HK_Weather.swift; sourceTree = "<group>"; };
+		CDEBB24128494CA100743E37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDEBB24328494CA100743E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDEBB2542849579400743E37 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		CDEBB2562849588D00743E37 /* WeatherEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEntry.swift; sourceTree = "<group>"; };
+		CDEBB2582849590400743E37 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		CDEBB25A28495B6400743E37 /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +108,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CDEBB23528494C9F00743E37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDEBB23D28494C9F00743E37 /* SwiftUI.framework in Frameworks */,
+				CDEBB23B28494C9F00743E37 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +126,8 @@
 				CDEBB209284949A300743E37 /* Simple Hong Kong Weather Widget */,
 				CDEBB21A284949A900743E37 /* Simple Hong Kong Weather WidgetTests */,
 				CDEBB224284949A900743E37 /* Simple Hong Kong Weather WidgetUITests */,
+				CDEBB23E28494C9F00743E37 /* HK Weather */,
+				CDEBB23928494C9F00743E37 /* Frameworks */,
 				CDEBB208284949A300743E37 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +138,7 @@
 				CDEBB207284949A300743E37 /* Simple Hong Kong Weather Widget.app */,
 				CDEBB217284949A900743E37 /* Simple Hong Kong Weather WidgetTests.xctest */,
 				CDEBB221284949A900743E37 /* Simple Hong Kong Weather WidgetUITests.xctest */,
+				CDEBB23828494C9F00743E37 /* HK WeatherExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +179,77 @@
 			path = "Simple Hong Kong Weather WidgetUITests";
 			sourceTree = "<group>";
 		};
+		CDEBB23928494C9F00743E37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDEBB23A28494C9F00743E37 /* WidgetKit.framework */,
+				CDEBB23C28494C9F00743E37 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDEBB23E28494C9F00743E37 /* HK Weather */ = {
+			isa = PBXGroup;
+			children = (
+				CDEBB2502849547900743E37 /* WIdget */,
+				CDEBB24F2849546B00743E37 /* Utils */,
+				CDEBB24E2849546500743E37 /* Services */,
+				CDEBB24D2849545E00743E37 /* Models */,
+				CDEBB24C2849545A00743E37 /* Views */,
+				CDEBB24B2849545300743E37 /* App */,
+			);
+			path = "HK Weather";
+			sourceTree = "<group>";
+		};
+		CDEBB24B2849545300743E37 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CDEBB24328494CA100743E37 /* Info.plist */,
+				CDEBB24128494CA100743E37 /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CDEBB24C2849545A00743E37 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CDEBB24D2849545E00743E37 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CDEBB2542849579400743E37 /* Weather.swift */,
+				CDEBB2562849588D00743E37 /* WeatherEntry.swift */,
+				CDEBB25A28495B6400743E37 /* WeatherResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CDEBB24E2849546500743E37 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CDEBB2582849590400743E37 /* WeatherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CDEBB24F2849546B00743E37 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CDEBB2502849547900743E37 /* WIdget */ = {
+			isa = PBXGroup;
+			children = (
+				CDEBB23F28494C9F00743E37 /* HK_Weather.swift */,
+			);
+			path = WIdget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +260,12 @@
 				CDEBB203284949A300743E37 /* Sources */,
 				CDEBB204284949A300743E37 /* Frameworks */,
 				CDEBB205284949A300743E37 /* Resources */,
+				CDEBB24A28494CA100743E37 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CDEBB24528494CA100743E37 /* PBXTargetDependency */,
 			);
 			name = "Simple Hong Kong Weather Widget";
 			productName = "Simple Hong Kong Weather Widget";
@@ -183,6 +308,23 @@
 			productReference = CDEBB221284949A900743E37 /* Simple Hong Kong Weather WidgetUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CDEBB23728494C9F00743E37 /* HK WeatherExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDEBB24728494CA100743E37 /* Build configuration list for PBXNativeTarget "HK WeatherExtension" */;
+			buildPhases = (
+				CDEBB23428494C9F00743E37 /* Sources */,
+				CDEBB23528494C9F00743E37 /* Frameworks */,
+				CDEBB23628494C9F00743E37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HK WeatherExtension";
+			productName = "HK WeatherExtension";
+			productReference = CDEBB23828494C9F00743E37 /* HK WeatherExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +346,9 @@
 						CreatedOnToolsVersion = 13.4;
 						TestTargetID = CDEBB206284949A300743E37;
 					};
+					CDEBB23728494C9F00743E37 = {
+						CreatedOnToolsVersion = 13.4;
+					};
 				};
 			};
 			buildConfigurationList = CDEBB202284949A300743E37 /* Build configuration list for PBXProject "Simple Hong Kong Weather Widget" */;
@@ -222,6 +367,7 @@
 				CDEBB206284949A300743E37 /* Simple Hong Kong Weather Widget */,
 				CDEBB216284949A900743E37 /* Simple Hong Kong Weather WidgetTests */,
 				CDEBB220284949A900743E37 /* Simple Hong Kong Weather WidgetUITests */,
+				CDEBB23728494C9F00743E37 /* HK WeatherExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -247,6 +393,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDEBB23628494C9F00743E37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDEBB24228494CA100743E37 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +433,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CDEBB23428494C9F00743E37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDEBB2592849590400743E37 /* WeatherService.swift in Sources */,
+				CDEBB25B28495B6400743E37 /* WeatherResponse.swift in Sources */,
+				CDEBB2552849579400743E37 /* Weather.swift in Sources */,
+				CDEBB24028494C9F00743E37 /* HK_Weather.swift in Sources */,
+				CDEBB2572849588D00743E37 /* WeatherEntry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +457,11 @@
 			isa = PBXTargetDependency;
 			target = CDEBB206284949A300743E37 /* Simple Hong Kong Weather Widget */;
 			targetProxy = CDEBB222284949A900743E37 /* PBXContainerItemProxy */;
+		};
+		CDEBB24528494CA100743E37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDEBB23728494C9F00743E37 /* HK WeatherExtension */;
+			targetProxy = CDEBB24428494CA100743E37 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -412,11 +583,13 @@
 		CDEBB22C284949A900743E37 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Simple Hong Kong Weather Widget/Preview Content\"";
+				DEVELOPMENT_TEAM = 37SNL764E4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -440,11 +613,13 @@
 		CDEBB22D284949A900743E37 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Simple Hong Kong Weather Widget/Preview Content\"";
+				DEVELOPMENT_TEAM = 37SNL764E4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -537,6 +712,60 @@
 			};
 			name = Release;
 		};
+		CDEBB24828494CA100743E37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37SNL764E4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "HK Weather/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "HK Weather";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jackycheung.Simple-Hong-Kong-Weather-Widget.HK-Weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDEBB24928494CA100743E37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37SNL764E4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "HK Weather/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "HK Weather";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jackycheung.Simple-Hong-Kong-Weather-Widget.HK-Weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -572,6 +801,15 @@
 			buildConfigurations = (
 				CDEBB232284949A900743E37 /* Debug */,
 				CDEBB233284949A900743E37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDEBB24728494CA100743E37 /* Build configuration list for PBXNativeTarget "HK WeatherExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDEBB24828494CA100743E37 /* Debug */,
+				CDEBB24928494CA100743E37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
