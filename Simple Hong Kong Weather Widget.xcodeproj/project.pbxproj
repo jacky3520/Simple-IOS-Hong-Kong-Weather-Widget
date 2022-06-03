@@ -23,6 +23,10 @@
 		CDEBB2572849588D00743E37 /* WeatherEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBB2562849588D00743E37 /* WeatherEntry.swift */; };
 		CDEBB2592849590400743E37 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBB2582849590400743E37 /* WeatherService.swift */; };
 		CDEBB25B28495B6400743E37 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBB25A28495B6400743E37 /* WeatherResponse.swift */; };
+		CDEBB25F2849614600743E37 /* WeatherTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBB25E2849614600743E37 /* WeatherTimeline.swift */; };
+		CDEBB261284964E500743E37 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBB260284964E500743E37 /* PlaceholderView.swift */; };
+		CDEBB2632849695B00743E37 /* WeatherEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBB2622849695B00743E37 /* WeatherEntryView.swift */; };
+		CDEBB26528496C5800743E37 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBB26428496C5800743E37 /* Date+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +88,10 @@
 		CDEBB2562849588D00743E37 /* WeatherEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEntry.swift; sourceTree = "<group>"; };
 		CDEBB2582849590400743E37 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		CDEBB25A28495B6400743E37 /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
+		CDEBB25E2849614600743E37 /* WeatherTimeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTimeline.swift; sourceTree = "<group>"; };
+		CDEBB260284964E500743E37 /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
+		CDEBB2622849695B00743E37 /* WeatherEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEntryView.swift; sourceTree = "<group>"; };
+		CDEBB26428496C5800743E37 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +205,7 @@
 				CDEBB24D2849545E00743E37 /* Models */,
 				CDEBB24C2849545A00743E37 /* Views */,
 				CDEBB24B2849545300743E37 /* App */,
+				CDEBB24328494CA100743E37 /* Info.plist */,
 			);
 			path = "HK Weather";
 			sourceTree = "<group>";
@@ -204,7 +213,6 @@
 		CDEBB24B2849545300743E37 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				CDEBB24328494CA100743E37 /* Info.plist */,
 				CDEBB24128494CA100743E37 /* Assets.xcassets */,
 			);
 			path = App;
@@ -213,6 +221,8 @@
 		CDEBB24C2849545A00743E37 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CDEBB260284964E500743E37 /* PlaceholderView.swift */,
+				CDEBB2622849695B00743E37 /* WeatherEntryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -238,6 +248,7 @@
 		CDEBB24F2849546B00743E37 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CDEBB26428496C5800743E37 /* Date+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -246,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				CDEBB23F28494C9F00743E37 /* HK_Weather.swift */,
+				CDEBB25E2849614600743E37 /* WeatherTimeline.swift */,
 			);
 			path = WIdget;
 			sourceTree = "<group>";
@@ -439,8 +451,12 @@
 			files = (
 				CDEBB2592849590400743E37 /* WeatherService.swift in Sources */,
 				CDEBB25B28495B6400743E37 /* WeatherResponse.swift in Sources */,
+				CDEBB26528496C5800743E37 /* Date+Extensions.swift in Sources */,
+				CDEBB25F2849614600743E37 /* WeatherTimeline.swift in Sources */,
 				CDEBB2552849579400743E37 /* Weather.swift in Sources */,
 				CDEBB24028494C9F00743E37 /* HK_Weather.swift in Sources */,
+				CDEBB261284964E500743E37 /* PlaceholderView.swift in Sources */,
+				CDEBB2632849695B00743E37 /* WeatherEntryView.swift in Sources */,
 				CDEBB2572849588D00743E37 /* WeatherEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
