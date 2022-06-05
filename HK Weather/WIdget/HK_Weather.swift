@@ -11,7 +11,7 @@ struct WeatherWidget: Widget {
         StaticConfiguration(kind: kind, provider: WeatherTimeline()) { entry in
             WeatherEntryView(entry: entry)
         }
-        .configurationDisplayName("HK Weather Widget")
-        .description("Simple Hong Kong Weather Widget")
+        .configurationDisplayName("HK Weather")
+        .description("HK Weather")
     }
 }

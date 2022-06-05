@@ -11,12 +11,14 @@ import WidgetKit
 struct WeatherTimeline: TimelineProvider
 {
     func placeholder(in context: Context) -> WeatherEntry {
-        let Weather = Weather(name: "HK", temperature: 27, unit: "C", description: "Raining")
-        return WeatherEntry(date: Date(), weather: Weather);
+//        let Weather = Weather(name: "HK", temperature: 27, unit: "C", description: "Raining")
+        let weather = Weather()
+
+        return WeatherEntry(date: Date(), weather: weather);
     }
     
     func getSnapshot(in context: Context, completion: @escaping (WeatherEntry) -> Void) {
-        let entry = WeatherEntry(date: Date(), weather: Weather(name: "HK", temperature: 27, unit: "C", description: "Raining"))
+        let entry = WeatherEntry(date: Date(), weather: Weather(place: "HK", value: 27, unit: "C"))
         completion(entry)
     }
     
@@ -29,11 +31,11 @@ struct WeatherTimeline: TimelineProvider
             (result) in let weather: Weather
             if case .success(let fetchedData) = result
             {
-                weather = fetchedData.first!
+                weather = fetchedData
             }
             else
             {
-                weather = Weather(name: "HK", temperature: 0, unit: "C", description: "Error getting weather info")
+                weather = Weather()
             }
            
             let entry = WeatherEntry(date: currentDate, weather: weather)
@@ -43,32 +45,4 @@ struct WeatherTimeline: TimelineProvider
     }
     
     typealias Entry = WeatherEntry
-    
-//    func snapshot(with context: Context, completion: @escaping (WeatherEntry) -> ())
-//    {
-//
-//    }
-    
-//    func timeline(with context: Context, completion: @escaping (Timeline<WeatherEntry>) -> ())
-//    {
-//        let currentDate = Date()
-//        let refreshDate = Calendar.current.date(byAdding: .minute, value: 15, to: currentDate)!
-//
-//        WeatherService().getWeather
-//        {
-//            (result) in let weather: Weather
-//            if case .success(let fetchedData) = result
-//            {
-//                weather = fetchedData.first!
-//            }
-//            else
-//            {
-//                weather = Weather(name: "HK", temperature: 0, unit: "C", description: "Error getting weather info")
-//            }
-//
-//            let entry = WeatherEntry(date: currentDate, weather: weather)
-//            let timeline = Timeline(entries: [entry], policy: .after(refreshDate))
-//            completion(timeline)
-//        }
-//    }
 }

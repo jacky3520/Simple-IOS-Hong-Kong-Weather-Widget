@@ -11,7 +11,7 @@ class WeatherService
 {
     let url = URL(string: "https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=rhrread&lang=en")!
     
-    func getWeather(completion: @escaping (Result <[Weather], Error>)  -> Void)
+    func getWeather(completion: @escaping (Result <Weather, Error>)  -> Void)
     {
         URLSession.shared.dataTask(with: url)
         {
@@ -26,14 +26,17 @@ class WeatherService
         }.resume()
     }
     
-    private func getWeatherResponse(fromData data: Data) -> [Weather]
+    private func getWeatherResponse(fromData data: Data) -> Weather
     {
         let weatherData = try? JSONDecoder().decode(WeatherResponse.self, from: data)
+        
+//        print(weatherData)
         
         if let weatherD = weatherData
         {
             return weatherD.forecast
         }
-        return [Weather(name: "Error", temperature: 0, unit: "",description: "Error")]
+        
+        return Weather(place: "Fuck", value: 10, unit: "F")
     }
 }

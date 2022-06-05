@@ -21,9 +21,9 @@ struct WeatherEntryView: View
             VStack
             {
                 Text("Hong Kong")
-                Text("\(entry.weather.temperature) °\(entry.weather.unit)").font(.largeTitle)
-                Text(getWeatherIcon(conditionString: entry.weather.description)).padding(.top, 10)
-                Text(entry.weather.description).font(.footnote)
+                Text("\(entry.weather.value) °\(entry.weather.unit)").font(.largeTitle)
+//                Text(getWeatherIcon(conditionString: entry.weather.description)).padding(.top, 10)
+                Text(entry.weather.place).font(.footnote)
                 HStack
                 {
                     Spacer()
@@ -34,8 +34,8 @@ struct WeatherEntryView: View
         
     }
     
-    func getWeatherIcon(conditionString: String) -> String
-    {
-        return "☁️"
-    }
+//    func getWeatherIcon(conditionString: String) -> String
+//    {
+//        return ""
+//    }
 }
